@@ -1,0 +1,27 @@
+[
+  {
+    "LogName": "Created new save",
+    "name": "inchallah",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-05T22:25:42.4844314+01:00",
+    "timeElapsed": "00:00:00.0036730"
+  },
+  {
+    "LogName": "Created new save",
+    "name": "inchallah",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-05T22:32:52.3437287+01:00",
+    "timeElapsed": "00:00:00.0038063"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Cryptage",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-05T22:44:01.7881422+01:00",
+    "timeElapsed": "00:00:00",
+    "timeCrypting": "00:00:00.0026766"
+  }
+]

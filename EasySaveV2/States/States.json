@@ -1,0 +1,74 @@
+[
+  {
+    "name": "inchallah",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-04T15:38:59.8820857+01:00",
+    "timeElapsed": "00:00:00.0028373",
+    "state": "actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "45 bytes"
+  },
+  {
+    "name": "test2",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\src",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\dest",
+    "dateTime": "2020-12-04T15:39:03.0340091+01:00",
+    "timeElapsed": "00:00:00.0012736",
+    "state": "actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "56 bytes"
+  },
+  {
+    "name": "test2",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\src\\Nouveau dossier",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\dest\\Nouveau dossier\\test.txt",
+    "dateTime": "2020-12-04T15:39:03.0401878+01:00",
+    "timeElapsed": "00:00:00.0007135",
+    "state": "Actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "74 bytes"
+  },
+  {
+    "name": "test2",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\src\\Nouveau dossier\\Nouveau dossier",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\dest\\Nouveau dossier\\Nouveau dossier\\test2.txt",
+    "dateTime": "2020-12-04T15:39:03.0445268+01:00",
+    "timeElapsed": "00:00:00.0008081",
+    "state": "Actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "91 bytes"
+  },
+  {
+    "name": "inchallah",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-05T22:25:42.5609498+01:00",
+    "timeElapsed": "00:00:00.0036730",
+    "state": "actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "45 bytes"
+  },
+  {
+    "name": "inchallah",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-05T22:32:52.4172124+01:00",
+    "timeElapsed": "00:00:00.0038063",
+    "state": "actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "45 bytes"
+  }
+]

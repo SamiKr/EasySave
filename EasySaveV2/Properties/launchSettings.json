@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "EasySaveV2": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "PathState": "../../../States/",
+        "PathLog": "../../../Logs/",
+        "BusinessProcess": "../../../BusinessProcess/BusinessProcess.txt"
+      }
+    }
+  }
+}
