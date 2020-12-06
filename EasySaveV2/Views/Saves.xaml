@@ -23,7 +23,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <DockPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="6">
-            <TextBlock Text="Saves" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+            <TextBlock Text="{Binding CurrentLanguage.MySaves}" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
 
             <ListView x:Name="saveListview" ItemsSource="{Binding Saves}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634">
                 <ListView.ItemTemplate>
