@@ -14,10 +14,12 @@ namespace EasySaveV2.ViewModel
 
         public static ILanguage CurrentLanguage { get; protected set; }
 
+
+
         static ObservableObject()
         {
             
-            string text = File.ReadAllText("Language.txt");
+            string text = File.ReadAllText(Path.Combine(Path.GetPathRoot(Environment.SystemDirectory), "EasySave", "Language.txt"));
             if (text == "en")
             {
                 CurrentLanguage = new EnglishLanguage();

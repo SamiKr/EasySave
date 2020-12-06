@@ -70,5 +70,17 @@
     "progression": "100%",
     "remaining Files": 1,
     "remaining Size": "45 bytes"
+  },
+  {
+    "name": "TestKurka",
+    "pathSource": "D:\\Users\\akurk\\Documents\\EasySave\\source",
+    "pathDestination": "D:\\Users\\akurk\\Documents\\EasySave\\dest",
+    "dateTime": "2020-12-06T18:28:43.1819926+01:00",
+    "timeElapsed": "00:00:00.0029185",
+    "state": "actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "49 bytes"
   }
 ]

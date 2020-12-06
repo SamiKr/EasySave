@@ -41,10 +41,10 @@
                                 <DockPanel Grid.Row="0" Grid.Column="0">
                                     <TextBlock Width="50" Text="{Binding Id}"/>
                                     <StackPanel Margin="5">
-                                        <TextBlock Text="{Binding CurrentLanguage.Name}" FontSize="16" FontWeight="Bold"/>
-                                        <TextBlock Text="{Binding CurrentLanguage.pathSource}" FontSize="16"/>
-                                        <TextBlock Text="{Binding CurrentLanguage.pathDestination}" FontSize="16"/>
-                                        <TextBlock Text="{Binding CurrentLanguage.Type}" FontSize="16"/>
+                                        <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding pathSource}" FontSize="16"/>
+                                        <TextBlock Text="{Binding pathDestination}" FontSize="16"/>
+                                        <TextBlock Text="{Binding Type}" FontSize="16"/>
                                         
                                     </StackPanel>
                                 </DockPanel>
@@ -82,7 +82,7 @@
                                 <DockPanel Grid.Row="0" Grid.Column="0">
                                     <TextBlock Width="50" Text="{Binding Id}"/>
                                     <StackPanel Margin="5">
-                                        <TextBlock Text="{Binding CurrentLanguage.Name}" FontSize="16" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="Bold"/>
 
                                     </StackPanel>
                                     <StackPanel>
