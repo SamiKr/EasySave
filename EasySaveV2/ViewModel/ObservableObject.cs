@@ -23,7 +23,7 @@ namespace EasySaveV2.ViewModel
             }
             else
             {
-                //CurrentLanguage = new FrenchLanguage();
+                CurrentLanguage = new FrenchLanguage();
             }
             
         }
