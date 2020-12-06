@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Input;
+using System.Threading;
 
 namespace EasySaveV2.ViewModel
 {
@@ -45,7 +46,28 @@ namespace EasySaveV2.ViewModel
                 OnPropertyChanged("SaveCryptedModel");
             }
         }
-        
+
+        private void SetLanguageDictionary()
+        {
+            ResourceDictionary dict = new ResourceDictionary();
+            switch (Thread.CurrentThread.CurrentCulture.ToString())
+            {
+                case "en-US":
+                    dict.Source = new Uri("..\\Resources\\StringResources.en-USxaml",
+                                  UriKind.Relative);
+                    break;
+                case "fr-CA":
+                    dict.Source = new Uri("..\\Resources\\StringResources.fr-FR.xaml",
+                                       UriKind.Relative);
+                    break;
+                default:
+                    dict.Source = new Uri("..\\Resources\\StringResources.xaml",
+                                      UriKind.Relative);
+                    break;
+            }
+            this.Resources.MergedDictionaries.Add(dict);
+        }
+
         private SaveCrypted saveCrypted;
 
         public string Source

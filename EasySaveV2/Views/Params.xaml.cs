@@ -35,5 +35,15 @@ namespace EasySaveV2.Views
 
             //cryptedListview.SelectedIndex = 0;
         }
+
+        private void save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void languageDG_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

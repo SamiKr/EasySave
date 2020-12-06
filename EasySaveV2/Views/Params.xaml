@@ -30,22 +30,36 @@
 
         <DockPanel Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3">
 
-                                    <StackPanel DockPanel.Dock="Top">
-                                        <Label>Bienvenue dans vos paramètres</Label>
-                                        <TextBlock Text="Source"/>
-                                        <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" FontSize="16"/>
-                                        <TextBlock Text="Destination"/>
-                                        <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" FontSize="16"/>
-                                        <TextBlock Text="Extension"/>
-                                        <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" FontSize="16"/>
+            <StackPanel DockPanel.Dock="Top">
+                <Label>Bienvenue dans vos paramètres</Label>
+                <TextBlock Text="Source"/>
+                <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" FontSize="16"/>
+                <TextBlock Text="Destination"/>
+                <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" FontSize="16"/>
+                <TextBlock Text="Extension"/>
+                <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" FontSize="16"/>
                 <Button Content="Crypter" Name="btnEncrypte"   
                     VerticalAlignment="Top" Width="141"  
                     Command="{Binding EncrypteCommand}"  />
+             
+                <Button x:Name="btnClose"
+
+        Content="{DynamicResource close}"
+
+        Click="btnClose_Click"
+
+        Grid.Row="3"
+
+        Grid.Column="1" 
+
+        Padding="10" 
+
+/>
             </StackPanel>
-                                </DockPanel>
-                          
-          
-      
+        </DockPanel>
+
+
+
     </Grid>
-    
+
 </UserControl>
