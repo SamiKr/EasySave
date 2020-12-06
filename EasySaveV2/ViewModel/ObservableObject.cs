@@ -7,16 +7,19 @@ using EasySaveV2.Models;
 
 namespace EasySaveV2.ViewModel
 {
+    // Notify view after modification
     public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
         public static ILanguage CurrentLanguage { get; protected set; }
 
+
+
         static ObservableObject()
         {
             
-            string text = File.ReadAllText("Language.txt");
+            string text = File.ReadAllText(Path.Combine(Path.GetPathRoot(Environment.SystemDirectory), "EasySave", "Language.txt"));
             if (text == "en")
             {
                 CurrentLanguage = new EnglishLanguage();

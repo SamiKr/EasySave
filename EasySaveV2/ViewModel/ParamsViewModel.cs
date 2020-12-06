@@ -32,7 +32,7 @@ namespace EasySaveV2.ViewModel
             set
             {
                 _SelectedIndex = value;
-                File.WriteAllText("../Language.txt", value == 0 ? "en" : "fr");
+                File.WriteAllText( Path.Combine(Path.GetPathRoot(Environment.SystemDirectory), "EasySave", "Language.txt")  , value == 0 ? "en" : "fr");
             }
         }
 
@@ -99,6 +99,7 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _createCrypting { get; set; }
+        // Trigger createCrypt
         public ICommand EncrypteCommand
         {
             get
@@ -106,6 +107,7 @@ namespace EasySaveV2.ViewModel
                 return _createCrypting;
             }
         }
+        // Display view params
         public ParamsViewModel(){
 
             _saveCryptedListing = new ObservableCollection<SaveCrypted>();
@@ -117,8 +119,10 @@ namespace EasySaveV2.ViewModel
             _createCrypting = new RelayCommand(CreateCrypt);
             //SavesToCrypt = ;
 
-            _SelectedIndex = File.ReadAllText("Language.txt") == "en" ? 0 : 1;
+            _SelectedIndex = File.ReadAllText(Path.Combine(Path.GetPathRoot(Environment.SystemDirectory), "EasySave", "Language.txt")) == "en" ? 0 : 1;
         }
+
+        // Launch softWare CryptoSoft
         public void CreateCrypt()
         {
             _saveCryptedListing.Add(SaveCryptedModel);

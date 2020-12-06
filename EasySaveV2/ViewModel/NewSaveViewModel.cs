@@ -17,12 +17,13 @@ namespace EasySaveV2.ViewModel
     {
         //Collection of all saves avaiable on file
         private ObservableCollection<Save> _saveListing { get; set; }
-        //
+        // Check if a save is already select for execution
         private ObservableCollection<Save> _checkedListing { get; set; }
+        // Save executed with button execute
         public ObservableCollection<Save> Saves { get; set; }
-
+        // List for sequential save
         public ObservableCollection<Save> SavesChecked { get; set; }
-
+        // List of saves display
         public Save _viewedSave;
         public Save ViewedSave
         {
@@ -51,6 +52,7 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _removeSave { get; set; }
+        // Trigger method removeSave
         public ICommand RemoveCommand
         {
             get
@@ -59,6 +61,7 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _executeSave { get; set; }
+        // Trigger method executeSave
         public ICommand ExecuteCommand
         {
             get
@@ -68,6 +71,7 @@ namespace EasySaveV2.ViewModel
         }
 
         private ICommand _addList { get; set; }
+        // Trigger method addList
         public ICommand AddListCommand
         {
             get
@@ -76,6 +80,7 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _removeCheck { get; set; }
+        // Trigger method removeCheck
         public ICommand RemoveCheckCommand
         {
             get
@@ -84,6 +89,7 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _saveSequential { get; set; }
+        // Trigger method saveSequential
         public ICommand sequentialSavesCommand
         {
             get
@@ -101,7 +107,7 @@ namespace EasySaveV2.ViewModel
 
             Update();
         }
-
+        // Add a save to the list to execute
         public void AddList(object save)
         {
             //Get the product passed through parameter
@@ -126,6 +132,7 @@ namespace EasySaveV2.ViewModel
             
             
         }
+        // remove a save from the list of save
         public void RemoveCheck(object save)
         {
             //Get the product passed through parameter
@@ -134,7 +141,7 @@ namespace EasySaveV2.ViewModel
             _checkedListing.Remove(checkSave);
 
         }
-
+        // Execute the save in the list SavesChecked
         public void executeCheckedSaves()
         {
             //int nbSaves = SavesChecked.Count();
@@ -173,6 +180,7 @@ namespace EasySaveV2.ViewModel
             MessageBox.Show("Vos sauvegardes ont été effectuées");
             _checkedListing.Clear();
         }
+        // Execute one Save
         public void ExecuteSave(object save)
         {
             var savetoexecute = save as Save;
@@ -422,7 +430,7 @@ namespace EasySaveV2.ViewModel
             // Formalize the date for json filename
             string today = DateTime.Now.ToString("dd-MM-yyyy");
 
-            // Creating JObject to stock all the elements 
+            // Creating JObject to stock all the elements
             JObject newObject = new JObject();
             newObject.Add("LogName", logName);
             newObject.Add("name", name);
@@ -730,6 +738,7 @@ namespace EasySaveV2.ViewModel
             array.Add(obj);
             File.WriteAllText(file, array.ToString());
         }
+        // Detecte all running Business Process
         static bool ProcessDetecte()
         {
             List<string> para = new List<string>();
