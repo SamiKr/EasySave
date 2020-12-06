@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Input;
+using System.IO;
 
 namespace EasySaveV2.ViewModel
 {
@@ -22,6 +23,19 @@ namespace EasySaveV2.ViewModel
         public ObservableCollection<SaveCrypted> SavesToCrypt { get; set; }
 
         public SaveCrypted _viewedSaveCrypted;
+
+        private int _SelectedIndex;
+
+        public int SelectedIndex
+        {
+            get => _SelectedIndex;
+            set
+            {
+                _SelectedIndex = value;
+                File.WriteAllText("../Language.txt", value == 0 ? "en" : "fr");
+            }
+        }
+
         public SaveCrypted ViewedSaveCrypted
         {
             get { return _viewedSaveCrypted; }
@@ -85,7 +99,6 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _createCrypting { get; set; }
-        // Trigger createCrypt
         public ICommand EncrypteCommand
         {
             get
@@ -93,7 +106,6 @@ namespace EasySaveV2.ViewModel
                 return _createCrypting;
             }
         }
-        // Display view params
         public ParamsViewModel(){
 
             _saveCryptedListing = new ObservableCollection<SaveCrypted>();
@@ -103,9 +115,10 @@ namespace EasySaveV2.ViewModel
            
             SaveCryptedModel = new SaveCrypted();
             _createCrypting = new RelayCommand(CreateCrypt);
-        }
+            //SavesToCrypt = ;
 
-        // Launch softWare CryptoSoft
+            _SelectedIndex = File.ReadAllText("Language.txt") == "en" ? 0 : 1;
+        }
         public void CreateCrypt()
         {
             _saveCryptedListing.Add(SaveCryptedModel);

@@ -31,18 +31,22 @@
         <DockPanel Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3">
 
                                     <StackPanel DockPanel.Dock="Top">
-                                        <Label>Bienvenue dans vos paramètres</Label>
+                <TextBlock Text="{Binding CurrentLanguage.Welcome}"/>
                                         <TextBlock Text="Source"/>
                                         <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" FontSize="16"/>
                                         <TextBlock Text="Destination"/>
                                         <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" FontSize="16"/>
                                         <TextBlock Text="Extension"/>
                                         <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" FontSize="16"/>
-                <Button Content="Crypter" Name="btnEncrypte"   
+                <Button Content="{Binding CurrentLanguage.Crypter}" Name="btnEncrypte"   
                     VerticalAlignment="Top" Width="141"  
                     Command="{Binding EncrypteCommand}"  />
             </StackPanel>
                                 </DockPanel>
+        <ComboBox Grid.ColumnSpan="2" Margin="56,38,104,38" Grid.RowSpan="2" Grid.Row="2" SelectedIndex="{Binding SelectedIndex}">
+            <ComboBoxItem>English</ComboBoxItem>
+            <ComboBoxItem>Français</ComboBoxItem>
+        </ComboBox>
                           
           
       

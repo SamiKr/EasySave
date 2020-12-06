@@ -23,7 +23,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <DockPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="6">
-            <TextBlock Text="Saves" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+            <TextBlock Text="{Binding CurrentLanguage.MySaves}" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
 
             <ListView x:Name="saveListview" ItemsSource="{Binding Saves}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634">
                 <ListView.ItemTemplate>
@@ -41,10 +41,10 @@
                                 <DockPanel Grid.Row="0" Grid.Column="0">
                                     <TextBlock Width="50" Text="{Binding Id}"/>
                                     <StackPanel Margin="5">
-                                        <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="Bold"/>
-                                        <TextBlock Text="{Binding pathSource}" FontSize="16"/>
-                                        <TextBlock Text="{Binding pathDestination}" FontSize="16"/>
-                                        <TextBlock Text="{Binding Type}" FontSize="16"/>
+                                        <TextBlock Text="{Binding CurrentLanguage.Name}" FontSize="16" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding CurrentLanguage.pathSource}" FontSize="16"/>
+                                        <TextBlock Text="{Binding CurrentLanguage.pathDestination}" FontSize="16"/>
+                                        <TextBlock Text="{Binding CurrentLanguage.Type}" FontSize="16"/>
                                         
                                     </StackPanel>
                                 </DockPanel>
@@ -62,9 +62,9 @@
         </DockPanel>
         
         <DockPanel Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="6" Margin="180,0,0,0">
-            <TextBlock Text="SavesChecked" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+            <TextBlock Text="{Binding CurrentLanguage.saveChecked}" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
             <DockPanel DockPanel.Dock="Top" Margin="5" >
-                <Button Content="Lancer les sauvegardes" Command="{Binding ElementName=checkedListview, Path=DataContext.sequentialSavesCommand}" CommandParameter="{Binding}"/>
+                <Button Content="{Binding CurrentLanguage.Launch}" Command="{Binding ElementName=checkedListview, Path=DataContext.sequentialSavesCommand}" CommandParameter="{Binding}"/>
             </DockPanel>
             <ListView x:Name="checkedListview" ItemsSource="{Binding SavesChecked}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634">
                 <ListView.ItemTemplate>
@@ -82,7 +82,7 @@
                                 <DockPanel Grid.Row="0" Grid.Column="0">
                                     <TextBlock Width="50" Text="{Binding Id}"/>
                                     <StackPanel Margin="5">
-                                        <TextBlock Text="{Binding Name}" FontSize="16" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding CurrentLanguage.Name}" FontSize="16" FontWeight="Bold"/>
 
                                     </StackPanel>
                                     <StackPanel>
