@@ -6,8 +6,8 @@ namespace EasySaveV2.Models
     {
         public string MySaves => "My saves";
         public string Name => "Name";
-        public string pathSource => "pathSource";
-        public string pathDestination => "pathDestination";
+        public string pathSource => "Path source";
+        public string pathDestination => "Path destination";
         public string Type => "Type";
         public string Crypter => "Crypter";
         public string Launch => "Launch the saves";
