@@ -85,6 +85,7 @@ namespace EasySaveV2.ViewModel
             }
         }
         private ICommand _createCrypting { get; set; }
+        // Trigger createCrypt
         public ICommand EncrypteCommand
         {
             get
@@ -92,6 +93,7 @@ namespace EasySaveV2.ViewModel
                 return _createCrypting;
             }
         }
+        // Display view params
         public ParamsViewModel(){
 
             _saveCryptedListing = new ObservableCollection<SaveCrypted>();
@@ -101,8 +103,9 @@ namespace EasySaveV2.ViewModel
            
             SaveCryptedModel = new SaveCrypted();
             _createCrypting = new RelayCommand(CreateCrypt);
-            //SavesToCrypt = ;
         }
+
+        // Launch softWare CryptoSoft
         public void CreateCrypt()
         {
             _saveCryptedListing.Add(SaveCryptedModel);

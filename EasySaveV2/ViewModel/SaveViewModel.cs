@@ -89,18 +89,7 @@ namespace EasySaveV2.ViewModel
                 }
             }
         }
-        /*public string Type
-        {
-            get { return save.Type; }
-            set
-            {
-                if (save.Type != value)
-                {
-                    save.Type = value;
-                    new PropertyChangedEventArgs("Type");
-                }
-            }
-        }*/
+        
 
         //Property to access the save being viewed (See above)
         public Save ViewedSave
@@ -121,11 +110,6 @@ namespace EasySaveV2.ViewModel
 
         private IList<Save> SavesList;
 
-        /*public IList<Save> Saves
-        {
-            get { return SavesList; }
-            set { SavesList = value; }
-        }*/
 
         private ICommand _createSave { get; set; }
         public ICommand CreateCommand
@@ -139,16 +123,7 @@ namespace EasySaveV2.ViewModel
 
         public void CreateBackup()
         {
-            /*save = new Save
-            {
-                Id = 1,
-                Name = Save.Name,
-                pathSource = Save.pathSource,
-                pathDestination = Save.pathDestination,
-                Type = Save.Type,
-            };
-  
-            SavesList.Add(save);*/
+           
 
             AssignId(SaveModel);
             bool AllInputsValid = false;

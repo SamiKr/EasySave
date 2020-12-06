@@ -4,6 +4,7 @@ using System.Text;
 
 namespace EasySaveV2.Models
 {
+    // Class encrypt
     public class SaveCrypted
     {
         public string source { get; set; }

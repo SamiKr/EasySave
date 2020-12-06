@@ -5,6 +5,7 @@ using System.Text;
 
 namespace EasySaveV2.ViewModel
 {
+    // Notify view after modification
     public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
