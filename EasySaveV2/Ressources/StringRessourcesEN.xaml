@@ -1,0 +1,45 @@
+﻿<Application x:Class="EasySaveV2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:system="clr-namespace:EasySaveV2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary 
+            
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+            xmlns:system="clr-namespace:System;assembly=mscorlib">
+            //Nouvelle sauvegarde
+            <system:String x:Key="close">Close</system:String>
+            <system:String x:Key="saveType">SaveType</system:String>
+            <system:String x:Key="complete">complete</system:String>
+            <system:String x:Key="differential">differential</system:String>
+            <system:String x:Key="saveName">Save Name</system:String>
+            <system:String x:Key="add">Add</system:String>
+            <system:String x:Key="source">Source</system:String>
+            <system:String x:Key="destination">destination</system:String>
+
+
+            //Menu de gauche
+            <system:String x:Key="mySaves">My Saves</system:String>
+            <system:String x:Key="newSaves">New Save</system:String>
+            <system:String x:Key="myParemeters">My parameters</system:String>
+
+            //Mes sauvegardes
+
+            <system:String x:Key="saves">Saves</system:String>
+            <system:String x:Key="add">Add</system:String>
+            <system:String x:Key="launchSaves">Launch Saves</system:String>
+            <system:String x:Key="savesChecked">Saves Checked</system:String>
+
+
+            //Param
+            <system:String x:Key="crypting">Crypting</system:String>
+            <system:String x:Key="changeLanguage">Change Language</system:String>
+            <system:String x:Key="source">Source</system:String>
+            <system:String x:Key="destination">destination</system:String>
+            <system:String x:Key="extension">Extension</system:String>
+            <system:String x:Key="Title">Welcome to our parameters</system:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
