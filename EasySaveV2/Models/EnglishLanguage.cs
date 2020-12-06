@@ -13,9 +13,18 @@ namespace EasySaveV2.Models
         public string Launch => "Launch the saves";
         public string SavesTypes => "Saves Types";
         public string Add => "Add";
+        public string Remove => "Remove";
+        public string Execute => "Execute";
         public string saveName => "Save Name";
         public string saveChecked => "Save Checked";
         public string welcome => "Welcome to parameters";
+        public string menuSaves => "My Saves";
+        public string menuNewSave => "New Save";
+        public string menuOptions => "Options";
+
+
+
+
 
 
     }

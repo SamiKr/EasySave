@@ -15,8 +15,13 @@ namespace EasySaveV2
         string Launch { get; }
         string SavesTypes { get; }
         string Add { get; }
+        string Remove { get; }
+        string Execute { get; }
         string saveName { get; }
         string saveChecked { get; }
         string welcome { get; }
+        string menuSaves { get; }
+        string menuNewSave { get; }
+        string menuOptions { get; }
     }
 }

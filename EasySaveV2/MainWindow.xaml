@@ -7,7 +7,7 @@
         xmlns:viewmodels="clr-namespace:EasySaveV2.ViewModel"
         xmlns:views="clr-namespace:EasySaveV2.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="625">
+        Title="ProSoft - EasySave" Height="600" Width="1200" MinWidth ="1200" MinHeight="600" MaxWidth="1200" MaxHeight="600">
     <Window.Resources>
         <DataTemplate x:Name="Saves" DataType="{x:Type viewmodels:NewSaveViewModel}">
             <views:Saves DataContext="{Binding}"/>
@@ -25,8 +25,6 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -36,12 +34,13 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5">
+        <DockPanel Background="#313335" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5">
+            <Image Source="https://dev.azure.com/samikosbur/_apis/GraphProfile/MemberAvatars/adf9dd57-62e0-4a7e-bad2-1c8580c6ec72?overrideDisplayName=EasySave" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35 10 0 0" Width="200" Height="200"/>
             <StackPanel>
-                <Button Content="Mes sauvegardes" Click="Saves_Clicked"/>
-                <Button Content="Nouvelle sauvegarde" Click="NewSaves_Clicked"/>
-                <Button Content="Mes paramètres" Click="Params_Clicked"/>
-                     </StackPanel>
+                <Button Content="{Binding CurrentLanguage.menuSaves}" FontFamily="Montserrat" FontWeight="Bold" Margin="0 200 0 -200" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="Saves_Clicked"/>
+                <Button Content="{Binding CurrentLanguage.menuNewSave}" FontFamily="Montserrat" FontWeight="Bold" Margin="0 200 0 -200" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="NewSaves_Clicked" />
+                <Button Content="{Binding CurrentLanguage.menuOptions}" FontFamily="Montserrat" FontWeight="Bold" Margin="0 200 0 -200" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="Params_Clicked"/>
+            </StackPanel>
         </DockPanel>
 
 
