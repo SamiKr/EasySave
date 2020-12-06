@@ -28,7 +28,7 @@
       
         <DockPanel Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" Grid.RowSpan="4">
             <StackPanel DockPanel.Dock="Left" Margin="10" MinWidth="125">
-                <TextBlock Text="Save Type"/>
+                <TextBlock Text="{Binding CurrentLanguage.SaveType}"/>
                 <ComboBox x:Name="typeComboBox" FontSize="16"  ItemsSource="{Binding Source={global:EnumBindingSourceExtension {x:Type global:SaveTypes}}}" SelectedValue="{Binding SaveModel.Type, Mode=TwoWay}" >
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
@@ -41,7 +41,7 @@
                
                     <StackPanel DockPanel.Dock="Bottom">
                         <StackPanel x:Name="addPanel" Margin="5">
-                            <Button Content="Ajouter" Name="btnUpdate"   
+                            <Button Content="{Binding CurrentLanguage.Add}" Name="btnUpdate"   
                 VerticalAlignment="Top" Width="141"  
                 Command="{Binding CreateCommand}"  />
                         </StackPanel>
@@ -51,7 +51,7 @@
             </StackPanel>
             <DockPanel Margin="10">
                 <StackPanel DockPanel.Dock="Top">
-                    <TextBlock Text="Save Name"/>
+                    <TextBlock Text="{Binding CurrentLanguage.saveName}"/>
                     <TextBox x:Name="nameTextBox" Text="{Binding SaveModel.Name, Mode=TwoWay}" FontSize="16"/>
                     <TextBlock Text="Source"/>
                     <TextBox x:Name="sourceTextBox" Text="{Binding SaveModel.pathSource, Mode=TwoWay}" FontSize="16"/>
