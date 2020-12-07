@@ -22,10 +22,10 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DockPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="6">
+        <DockPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="6" Background="#EAEAEA">
             <TextBlock Text="{Binding CurrentLanguage.MySaves}" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
 
-            <ListView x:Name="saveListview" ItemsSource="{Binding Saves}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634">
+            <ListView x:Name="saveListview" ItemsSource="{Binding Saves}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634" Background="#EAEAEA">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Border Padding="2" BorderThickness="0,0,0,1" BorderBrush="Black">
@@ -61,12 +61,12 @@
             
         </DockPanel>
         
-        <DockPanel Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="6" Margin="180,0,0,0">
+        <DockPanel Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="6" Margin="220 0 0 0">
             <TextBlock Text="{Binding CurrentLanguage.saveChecked}" FontSize="26" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
             <DockPanel DockPanel.Dock="Top" Margin="5" >
-                <Button Content="{Binding CurrentLanguage.Launch}" Command="{Binding ElementName=checkedListview, Path=DataContext.sequentialSavesCommand}" CommandParameter="{Binding}"/>
+                <Button Content="{Binding CurrentLanguage.Launch}" Command="{Binding ElementName=checkedListview, Path=DataContext.sequentialSavesCommand}" CommandParameter="{Binding}" FontFamily="Montserrat" FontWeight="DemiBold" FontSize="14" Height="30" Background="#16C25D" Foreground="White"/>
             </DockPanel>
-            <ListView x:Name="checkedListview" ItemsSource="{Binding SavesChecked}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634">
+            <ListView x:Name="checkedListview" ItemsSource="{Binding SavesChecked}" SelectedItem="{Binding ViewedSave, Mode=TwoWay}" DockPanel.Dock="Bottom" Width="634" Background="#EAEAEA">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Border Padding="2" BorderThickness="0,0,0,1" BorderBrush="Black">
