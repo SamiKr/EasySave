@@ -54,5 +54,29 @@
     "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\dest",
     "dateTime": "2020-12-07T11:27:22.1562185+01:00",
     "timeElapsed": "00:00:00.0022121"
+  },
+  {
+    "LogName": "Created new save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-07T11:58:13.9986933+01:00",
+    "timeElapsed": "00:00:00.0036546"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier",
+    "dateTime": "2020-12-07T11:58:14.0806891+01:00",
+    "timeElapsed": "00:00:00.0013771"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier\\test",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier\\test",
+    "dateTime": "2020-12-07T11:58:14.0861434+01:00",
+    "timeElapsed": "00:00:00.0009146"
   }
 ]

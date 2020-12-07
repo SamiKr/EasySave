@@ -49,9 +49,9 @@
                                     </StackPanel>
                                 </DockPanel>
                                 <StackPanel Grid.Column="0" Grid.Row="1"  Orientation="Horizontal">
-                                    <Button Content="{Binding CurrentLanguage.Remove}"   Command="{Binding ElementName=saveListview, Path=DataContext.RemoveCommand}" CommandParameter="{Binding}"  Foreground="Black" FontSize="10" Background="#C21616"  Height="20" Width="70" />
-                                    <Button Content="{Binding CurrentLanguage.Execute}" Command="{Binding ElementName=saveListview, Path=DataContext.ExecuteCommand}" CommandParameter="{Binding}"  Foreground="Black" FontSize="10" Background="#16C25D" Height="20" Width="70"  />
-                                    <Button Content="{Binding CurrentLanguage.Add}" Command="{Binding ElementName=saveListview, Path=DataContext.AddListCommand}" CommandParameter="{Binding}"  Foreground="Black" FontSize="10" Background="#4895ef" Height="20" Width="70" />
+                                    <Button Content="-"   Command="{Binding ElementName=saveListview, Path=DataContext.RemoveCommand}" CommandParameter="{Binding}"  Foreground="White" FontSize="10" Background="#C21616"  Height="20" Width="70" />
+                                    <Button Content="Exec." Command="{Binding ElementName=saveListview, Path=DataContext.ExecuteCommand}" CommandParameter="{Binding}"  Foreground="White" FontSize="10" Background="#16C25D" Height="20" Width="70"  />
+                                    <Button Content="+" Command="{Binding ElementName=saveListview, Path=DataContext.AddListCommand}" CommandParameter="{Binding}"  Foreground="White" FontSize="10" Background="#4895ef" Height="20" Width="70" />
                                 </StackPanel>
                             </Grid>
                         </Border>

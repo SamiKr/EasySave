@@ -18,7 +18,11 @@ namespace EasySaveV2.ViewModel
 
         static ObservableObject()
         {
-            
+            var tmp = System.IO.Path.Combine(System.IO.Path.GetPathRoot(Environment.SystemDirectory), "EasySave");
+            System.IO.Directory.CreateDirectory(tmp);
+            var file = System.IO.Path.Combine(tmp, "Language.txt");
+            if (System.IO.File.Exists(file) == false)
+                System.IO.File.WriteAllText(file, "en");
             string text = File.ReadAllText(Path.Combine(Path.GetPathRoot(Environment.SystemDirectory), "EasySave", "Language.txt"));
             if (text == "en")
             {

@@ -16,7 +16,7 @@ namespace EasySaveV2.Models
         public string Remove => "Remove";
         public string Execute => "Execute";
         public string saveName => "Save Name";
-        public string saveChecked => "Save Checked";
+        public string saveChecked => "Selected Saves";
         public string Welcome => "Welcome to parameters";
         public string menuSaves => "My Saves";
         public string menuNewSave => "New Save";

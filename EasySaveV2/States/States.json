@@ -190,5 +190,41 @@
     "progression": "100%",
     "remaining Files": 0,
     "remaining Size": "0"
+  },
+  {
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-07T11:58:14.0607413+01:00",
+    "timeElapsed": "00:00:00.0036546",
+    "state": "actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "45 bytes"
+  },
+  {
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier\\cc.txt",
+    "dateTime": "2020-12-07T11:58:14.0821231+01:00",
+    "timeElapsed": "00:00:00.0013771",
+    "state": "Actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "59 bytes"
+  },
+  {
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier\\test",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier\\test\\Nouveau document texte.txt",
+    "dateTime": "2020-12-07T11:58:14.0876112+01:00",
+    "timeElapsed": "00:00:00.0009146",
+    "state": "Actif",
+    "size": 1,
+    "progression": "100%",
+    "remaining Files": 1,
+    "remaining Size": "84 bytes"
   }
 ]

@@ -26,10 +26,11 @@ namespace EasySaveV2
         private readonly SaveViewModel saveModel;
         public MainWindow()
         {
+           
             InitializeComponent();
             ConfirmFileDependencies();
             this.DataContext = new SaveViewModel();
-
+           
         }
         private void Saves_Clicked(object sender, RoutedEventArgs e)
         {
