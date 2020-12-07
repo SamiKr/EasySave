@@ -23,5 +23,8 @@ namespace EasySaveV2
         string menuSaves { get; }
         string menuNewSave { get; }
         string menuOptions { get; }
+        string optionsTitle { get; }
+        string encrypt { get; }
+        string changeLanguage { get; }
     }
 }

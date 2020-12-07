@@ -8,7 +8,7 @@
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="White">
+    <Grid Background="#EAEAEA">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -26,25 +26,25 @@
             <ColumnDefinition Width="159"/>
         </Grid.ColumnDefinitions>
 
+        <TextBlock Text="{Binding CurrentLanguage.optionsTitle}"  Grid.Column="0" Grid.Row="0" Grid.RowSpan="1" Grid.ColumnSpan="4" FontFamily="Montserrat" FontWeight="Bold" FontSize="30" Margin="40 20 0 0"/>
 
-
-        <DockPanel Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="0" Grid.RowSpan="6">
-            <StackPanel DockPanel.Dock="Right" Width="100" Height="182">
+        <DockPanel Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="1" Grid.RowSpan="5" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <StackPanel DockPanel.Dock="Right" Width="800" Height="400" Margin="40 0 0 0">
                 <TextBlock Text="{Binding CurrentLanguage.Welcome}"/>
-                <TextBlock Text="Source"/>
-                <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" FontSize="16"/>
-                <TextBlock Text="Destination"/>
-                <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" FontSize="16"/>
-                <TextBlock Text="Extension"/>
-                <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" FontSize="16"/>
-                <Button Content="{Binding CurrentLanguage.Crypter}" x:Name="btnEncrypte"   
-                    VerticalAlignment="Top" Width="141"  
-                    Command="{Binding EncrypteCommand}"  />
+                <TextBlock Text="Source" FontFamily="Montserrat" FontWeight="Bold" FontSize="24"/>
+                <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" VerticalAlignment="Center" FontSize="20" Width="729" FontFamily="Montserrat" FontWeight="Medium" Height="40" HorizontalAlignment="Left"/>
+                <TextBlock Text="Destination" FontFamily="Montserrat" FontWeight="Bold" FontSize="24"/>
+                <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" VerticalAlignment="Center" FontSize="20" Width="725" FontFamily="Montserrat" FontWeight="Medium" Height="40" HorizontalAlignment="Left"/>
+                <TextBlock Text="Extension" FontFamily="Montserrat" FontWeight="Bold" FontSize="24"/>
+                <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" VerticalAlignment="Center" FontSize="20" Width="729" FontFamily="Montserrat" FontWeight="Medium" Height="40" HorizontalAlignment="Left"/>
+                <Button Content="{Binding CurrentLanguage.Crypter}" x:Name="btnEncrypte" Width="140"  
+                    Command="{Binding EncrypteCommand}" Height="40" Margin="0 20 0 0" />
             </StackPanel>
         </DockPanel>
-        <ComboBox Margin="10,0,151,48" Grid.Row="4" SelectedIndex="{Binding SelectedIndex}" Grid.Column="2" Grid.ColumnSpan="2">
-            <ComboBoxItem>English</ComboBoxItem>
-            <ComboBoxItem>Français</ComboBoxItem>
+        <TextBlock Text="{Binding CurrentLanguage.changeLanguage}" Grid.Column="0" Grid.Row="4" Grid.RowSpan="1" HorizontalAlignment="Left" Grid.ColumnSpan="4" FontFamily="Montserrat" FontWeight="DemiBold" FontSize="24" VerticalAlignment="Center" Margin="40 20 0 0"/>
+        <ComboBox Margin="40,11,40,38" Grid.Row="5" Grid.Column="1" FontFamily="Montserrat" FontSize="20" FontWeight="Medium" Grid.ColumnSpan="3" HorizontalAlignment="Center" SelectedIndex="{Binding SelectedIndex}" Width="300" Height="40">
+            <ComboBoxItem FontFamily="Montserrat" FontWeight="Medium" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center">English</ComboBoxItem>
+            <ComboBoxItem FontFamily="Montserrat" FontWeight="Medium" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center">Français</ComboBoxItem>
         </ComboBox>
 
 

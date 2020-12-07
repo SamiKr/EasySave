@@ -21,5 +21,8 @@ namespace EasySaveV2.Models
         public string menuSaves => "Mes sauvegardes";
         public string menuNewSave => "Nouvelle sauvegarde";
         public string menuOptions => "Options";
+        public string optionsTitle => "Cryptage et langues";
+        public string encrypt => "Crypter";
+        public string changeLanguage => "Changer la langue";
     }
 }

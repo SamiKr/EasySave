@@ -9,7 +9,7 @@ namespace EasySaveV2.Models
         public string pathSource => "Path source";
         public string pathDestination => "Path destination";
         public string Type => "Type";
-        public string Crypter => "Crypter";
+        public string Crypter => "Encrypt";
         public string Launch => "Launch the saves";
         public string SavesTypes => "Save Type";
         public string Add => "Add";
@@ -21,8 +21,9 @@ namespace EasySaveV2.Models
         public string menuSaves => "My Saves";
         public string menuNewSave => "New Save";
         public string menuOptions => "Options";
-
-
+        public string optionsTitle => "Encryption and language";
+        public string encrypt => "Encrypt";
+        public string changeLanguage => "Change language";
 
 
 
