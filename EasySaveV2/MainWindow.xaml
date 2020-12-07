@@ -35,11 +35,12 @@
         </Grid.RowDefinitions>
 
         <DockPanel Background="#313335" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5">
-            <Image Source="https://dev.azure.com/samikosbur/_apis/GraphProfile/MemberAvatars/adf9dd57-62e0-4a7e-bad2-1c8580c6ec72?overrideDisplayName=EasySave" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35 10 0 0" Width="200" Height="200"/>
+            
             <StackPanel>
-                <Button Content="{Binding CurrentLanguage.menuSaves}" FontFamily="Montserrat" FontWeight="Bold" Margin="0 200 0 -200" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="Saves_Clicked"/>
-                <Button Content="{Binding CurrentLanguage.menuNewSave}" FontFamily="Montserrat" FontWeight="Bold" Margin="0 200 0 -200" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="NewSaves_Clicked" />
-                <Button Content="{Binding CurrentLanguage.menuOptions}" FontFamily="Montserrat" FontWeight="Bold" Margin="0 200 0 -200" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="Params_Clicked"/>
+                <Image Grid.Row="0" Grid.Column="0" Source="https://dev.azure.com/samikosbur/_apis/GraphProfile/MemberAvatars/adf9dd57-62e0-4a7e-bad2-1c8580c6ec72?overrideDisplayName=EasySave" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0" Width="180" Height="180"/>
+                <Button Content="{Binding CurrentLanguage.menuSaves}" Padding="0 10 0 10" FontFamily="Montserrat" FontWeight="Bold" Margin="0 0 0 0" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="Saves_Clicked"/>
+                <Button Content="{Binding CurrentLanguage.menuNewSave}" Padding="0 10 0 10" FontFamily="Montserrat" FontWeight="Bold" Margin="0 0 0 0" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="NewSaves_Clicked" />
+                <Button Content="{Binding CurrentLanguage.menuOptions}" Padding="0 10 0 10" FontFamily="Montserrat" FontWeight="Bold" Margin="0 0 0 0" Background="#313335" BorderThickness="0" BorderBrush="#FF313335" Foreground="#FFD5D7D5" FontSize="30" Click="Params_Clicked"/>
             </StackPanel>
         </DockPanel>
 
