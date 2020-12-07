@@ -130,7 +130,6 @@ namespace EasySaveV2.ViewModel
                 MessageBox.Show("Sauvegarde dèjà séléctionnée !");
             }
             
-            
         }
         // remove a save from the list of save
         public void RemoveCheck(object save)
@@ -147,37 +146,9 @@ namespace EasySaveV2.ViewModel
             //int nbSaves = SavesChecked.Count();
             foreach (var saveChecked in SavesChecked)
             {
-
-                string source = saveChecked.pathSource;
-                string target = saveChecked.pathDestination;
-
-                System.IO.Directory.CreateDirectory(target);
-
-                if (System.IO.Directory.Exists(source))
-                {
-                    string[] files = System.IO.Directory.GetFiles(source);
-
-
-                    for (var i = 0; i < files.Length; i++)
-                    {
-
-
-                        if (saveChecked.Type == SaveTypes.Complete)
-                        {
-                            // Use static Path methods to extract only the file name from the path.
-                            string fileName = System.IO.Path.GetFileName(files[i]);
-                            string destFile = System.IO.Path.Combine(target, fileName);
-                            System.IO.File.Copy(files[i], destFile, true);
-                            
-                        }
-                        /*else if (savetoexecute.Type.Equals("Differential"))
-                        {
-
-                        }*/
-                    }
-                }
+                ExecuteSave(saveChecked);
             }
-            MessageBox.Show("Vos sauvegardes ont été effectuées");
+
             _checkedListing.Clear();
         }
         // Execute one Save
@@ -185,7 +156,7 @@ namespace EasySaveV2.ViewModel
         {
             var savetoexecute = save as Save;
             // If the directory already exists, this method does not create a new directory.
-        
+
             string source = savetoexecute.pathSource;
             string target = savetoexecute.pathDestination;
 
@@ -193,7 +164,7 @@ namespace EasySaveV2.ViewModel
 
             if (System.IO.Directory.Exists(source))
             {
-                
+
                 string[] files = System.IO.Directory.GetFiles(source);
                 string[] filest = System.IO.Directory.GetFiles(target);
 
@@ -355,6 +326,7 @@ namespace EasySaveV2.ViewModel
 
                         }
                         string[] directories = System.IO.Directory.GetDirectories(source);
+
                         foreach (string d in directories)
                         {
 
@@ -369,6 +341,7 @@ namespace EasySaveV2.ViewModel
                             string mytarget = newFolder;
                             string mytype = savetoexecute.Type.ToString();
                             int type;
+
                             if (mytype == "Complete")
                             {
                                 type = 1;
@@ -377,6 +350,7 @@ namespace EasySaveV2.ViewModel
                             {
                                 type = 2;
                             }
+
                             executeSaveDirectory(myname, mysource, mytarget, type);
                         }
                         MessageBox.Show("Votre sauvegarde a été effectuée");
@@ -386,15 +360,15 @@ namespace EasySaveV2.ViewModel
                     {
                         MessageBox.Show("Impossible de lancer la sauvegarde, merci de fermer les logiciels métier");
                     }
-                    
+
                 }
-            
+
             }
-       
+
         }
-         
-             
-        
+
+
+
         public NewSaveViewModel(){
 
             //Load all existing saves on file

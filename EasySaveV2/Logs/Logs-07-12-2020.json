@@ -1,0 +1,58 @@
+[
+  {
+    "LogName": "Created new save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-07T11:26:12.6813475+01:00",
+    "timeElapsed": "00:00:00.0036748"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier",
+    "dateTime": "2020-12-07T11:26:12.7968596+01:00",
+    "timeElapsed": "00:00:00.0013068"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier\\test",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier\\test",
+    "dateTime": "2020-12-07T11:26:12.8045093+01:00",
+    "timeElapsed": "00:00:00.0012256"
+  },
+  {
+    "LogName": "Created new save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination",
+    "dateTime": "2020-12-07T11:27:20.3759236+01:00",
+    "timeElapsed": "00:00:00.0018634"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier",
+    "dateTime": "2020-12-07T11:27:20.3971372+01:00",
+    "timeElapsed": "00:00:00.0011949"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test1",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\source\\Nouveau dossier\\test",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\destination\\Nouveau dossier\\test",
+    "dateTime": "2020-12-07T11:27:20.4160906+01:00",
+    "timeElapsed": "00:00:00.0017235"
+  },
+  {
+    "LogName": "Created New Save",
+    "name": "Test2",
+    "pathSource": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\src",
+    "pathDestination": "C:\\Users\\nabila\\Desktop\\Views\\Nouveau dossier\\dest",
+    "dateTime": "2020-12-07T11:27:22.1562185+01:00",
+    "timeElapsed": "00:00:00.0022121"
+  }
+]
