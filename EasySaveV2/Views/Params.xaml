@@ -30,7 +30,6 @@
 
         <DockPanel Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="1" Grid.RowSpan="5" VerticalAlignment="Top" HorizontalAlignment="Left">
             <StackPanel DockPanel.Dock="Right" Width="800" Height="400" Margin="40 0 0 0">
-                <TextBlock Text="{Binding CurrentLanguage.Welcome}"/>
                 <TextBlock Text="Source" FontFamily="Montserrat" FontWeight="Bold" FontSize="24"/>
                 <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" VerticalAlignment="Center" FontSize="20" Width="729" FontFamily="Montserrat" FontWeight="Medium" Height="40" HorizontalAlignment="Left"/>
                 <TextBlock Text="Destination" FontFamily="Montserrat" FontWeight="Bold" FontSize="24"/>

@@ -17,7 +17,7 @@ namespace EasySaveV2.Models
         public string Execute => "Executer";
         public string saveName => "Nom de la sauvegarde";
         public string saveChecked => "Sauvegarde Vérifiée";
-        public string welcome => "Bienvenue dans les paramètres";
+        public string Welcome => "Bienvenue dans les paramètres";
         public string menuSaves => "Mes sauvegardes";
         public string menuNewSave => "Nouvelle sauvegarde";
         public string menuOptions => "Options";

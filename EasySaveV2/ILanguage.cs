@@ -19,7 +19,7 @@ namespace EasySaveV2
         string Execute { get; }
         string saveName { get; }
         string saveChecked { get; }
-        string welcome { get; }
+        string Welcome { get; }
         string menuSaves { get; }
         string menuNewSave { get; }
         string menuOptions { get; }
