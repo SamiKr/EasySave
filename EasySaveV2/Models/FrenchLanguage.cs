@@ -11,7 +11,7 @@ namespace EasySaveV2.Models
         public string Type => "Type";
         public string Crypter => "Crypter";
         public string Launch => "Lance les sauvegardes";
-        public string SavesTypes => "Type des suavegardes";
+        public string SavesTypes => "Type de sauvegarde";
         public string Add => "Ajouter";
         public string Remove => "Supprimer";
         public string Execute => "Executer";

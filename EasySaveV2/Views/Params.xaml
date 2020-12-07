@@ -28,28 +28,27 @@
 
 
 
-        <DockPanel Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3">
-
-                                    <StackPanel DockPanel.Dock="Top">
+        <DockPanel Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="0" Grid.RowSpan="6">
+            <StackPanel DockPanel.Dock="Right" Width="100" Height="182">
                 <TextBlock Text="{Binding CurrentLanguage.Welcome}"/>
-                                        <TextBlock Text="Source"/>
-                                        <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" FontSize="16"/>
-                                        <TextBlock Text="Destination"/>
-                                        <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" FontSize="16"/>
-                                        <TextBlock Text="Extension"/>
-                                        <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" FontSize="16"/>
-                <Button Content="{Binding CurrentLanguage.Crypter}" Name="btnEncrypte"   
+                <TextBlock Text="Source"/>
+                <TextBox x:Name="sourceTextBox" Text="{Binding SaveCryptedModel.source, Mode=TwoWay}" FontSize="16"/>
+                <TextBlock Text="Destination"/>
+                <TextBox x:Name="destinationTextBox" Text="{Binding SaveCryptedModel.destination, Mode=TwoWay}" FontSize="16"/>
+                <TextBlock Text="Extension"/>
+                <TextBox x:Name="extensionTextBox" Text="{Binding SaveCryptedModel.extension, Mode=TwoWay}" FontSize="16"/>
+                <Button Content="{Binding CurrentLanguage.Crypter}" x:Name="btnEncrypte"   
                     VerticalAlignment="Top" Width="141"  
                     Command="{Binding EncrypteCommand}"  />
             </StackPanel>
-                                </DockPanel>
-        <ComboBox Grid.ColumnSpan="2" Margin="56,38,104,10" Grid.Row="2" SelectedIndex="{Binding SelectedIndex}">
+        </DockPanel>
+        <ComboBox Margin="10,0,151,48" Grid.Row="4" SelectedIndex="{Binding SelectedIndex}" Grid.Column="2" Grid.ColumnSpan="2">
             <ComboBoxItem>English</ComboBoxItem>
             <ComboBoxItem>Français</ComboBoxItem>
         </ComboBox>
-                          
-          
-      
+
+
+
     </Grid>
-    
+
 </UserControl>

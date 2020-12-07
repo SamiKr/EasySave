@@ -8,7 +8,7 @@
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="White">
+    <Grid Background="#787878">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -25,38 +25,38 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-      
-        <DockPanel Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" Grid.RowSpan="4">
-            <StackPanel DockPanel.Dock="Left" Margin="10" MinWidth="125">
-                <TextBlock Text="{Binding CurrentLanguage.SaveType}"/>
-                <ComboBox x:Name="typeComboBox" FontSize="16"  ItemsSource="{Binding Source={global:EnumBindingSourceExtension {x:Type global:SaveTypes}}}" SelectedValue="{Binding SaveModel.Type, Mode=TwoWay}" >
+
+        <DockPanel Grid.ColumnSpan="5" Grid.RowSpan="6" Margin="103,38,133,53">
+            <StackPanel DockPanel.Dock="Left" Margin="10" MinWidth="125" Height="83" RenderTransformOrigin="0.491,0.671">
+                <TextBlock Text="{Binding CurrentLanguage.SavesTypes}" TextAlignment="Center" Height="24" FontFamily="Montserrat" FontWeight="Bold"/>
+                <ComboBox x:Name="typeComboBox" FontSize="16" ItemsSource="{Binding Source={global:EnumBindingSourceExtension {x:Type global:SaveTypes}}}" SelectedValue="{Binding SaveModel.Type, Mode=TwoWay}" >
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding}"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                
+
                 <DockPanel>
-               
+
                     <StackPanel DockPanel.Dock="Bottom">
                         <StackPanel x:Name="addPanel" Margin="5">
                             <Button Content="{Binding CurrentLanguage.Add}" Name="btnUpdate"   
                 VerticalAlignment="Top" Width="141"  
                 Command="{Binding CreateCommand}"  />
                         </StackPanel>
-                    
+
                     </StackPanel>
                 </DockPanel>
             </StackPanel>
             <DockPanel Margin="10">
-                <StackPanel DockPanel.Dock="Top">
-                    <TextBlock Text="{Binding CurrentLanguage.saveName}"/>
-                    <TextBox x:Name="nameTextBox" Text="{Binding SaveModel.Name, Mode=TwoWay}" FontSize="16"/>
-                    <TextBlock Text="Source"/>
-                    <TextBox x:Name="sourceTextBox" Text="{Binding SaveModel.pathSource, Mode=TwoWay}" FontSize="16"/>
-                    <TextBlock Text="Destination"/>
-                    <TextBox x:Name="destinationTextBox" Text="{Binding SaveModel.pathDestination, Mode=TwoWay}" FontSize="16"/>
+                <StackPanel DockPanel.Dock="Top" Height="251">
+                    <TextBlock Text="{Binding CurrentLanguage.saveName}" Height="23" FontFamily="Montserrat" FontWeight="Bold" TextAlignment="Center"/>
+                    <TextBox x:Name="nameTextBox" Text="{Binding SaveModel.Name, Mode=TwoWay}" FontSize="16" Margin="10"/>
+                    <TextBlock Text="Source" FontFamily="Montserrat" FontWeight="Bold" Height="23" TextAlignment="Center" Margin="10"/>
+                    <TextBox x:Name="sourceTextBox" Text="{Binding SaveModel.pathSource, Mode=TwoWay}" FontSize="16" Margin="10" />
+                    <TextBlock Text="Destination" FontFamily="Montserrat" FontWeight="Bold" Height="23" TextAlignment="Center" Margin="10"/>
+                    <TextBox x:Name="destinationTextBox" Text="{Binding SaveModel.pathDestination, Mode=TwoWay}" FontSize="16" Margin="10"/>
 
                 </StackPanel>
 
