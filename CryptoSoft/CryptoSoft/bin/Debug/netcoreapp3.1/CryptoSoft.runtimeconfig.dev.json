@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\loick\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\loick\\.nuget\\packages"
+    ]
+  }
+}
